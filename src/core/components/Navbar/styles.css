@@ -1,0 +1,14 @@
+nav {
+    background: var(--daybreak-blue);
+    height: 62px;
+    width: 1440px;
+    align-items: center;
+    display: flex;
+}
+
+.logo-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 41px;
+}
