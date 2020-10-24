@@ -3,13 +3,17 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from 'pages/Home';
+import SearchProfile from 'pages/SearchProfile';
 
 const Routes = () => (
     <BrowserRouter>
         <Navbar />
         <Switch>
-            <Route path="/">
+            <Route path="/" exact>
                 <Home />
+            </Route>    
+            <Route path="/search-profile">
+                <SearchProfile />
             </Route>    
         </Switch>     
     </BrowserRouter>

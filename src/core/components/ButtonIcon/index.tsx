@@ -8,7 +8,7 @@ type Props = {
 
 const ButtonIcon = ({ text }: Props) => (
     <button className="btn-icon">
-        <h1 className="btn-icon-content">{text}</h1>
+        {text}
     </button>
 );
 

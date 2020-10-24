@@ -1,5 +1,6 @@
 import ButtonIcon from 'core/components/ButtonIcon';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -15,9 +16,9 @@ const Home = () => (
             for Figma, de Mateusz Wierzbicki: 
                 <a className="link-email" href="Link"> antforfigma@gmail.com</a>
         </p>
-        <div>
+        <Link to="/search-profile">
             <ButtonIcon text="Começar"/>
-        </div>
+        </Link>
     </div>
 );
 
