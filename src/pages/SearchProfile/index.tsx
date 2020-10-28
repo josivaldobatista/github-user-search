@@ -1,17 +1,13 @@
-import ButtonIcon from 'core/components/ButtonIcon';
 import React from 'react';
+import InfoCard from './components/InfoCard';
+import SearchCard from './components/SearchCard';
 
 import './styles.css';
 
 const SearchProfile = () => (
     <div className="container">
-        <div className="card">
-            <h1 className="title">
-                Encontre um perfil Github
-            </h1>
-            <input type="text" className="input" />
-            <ButtonIcon text="Encontrar" />
-        </div>
+        <SearchCard text="Encontre um perfil Github"/>
+        <InfoCard />
     </div>
 );
 
