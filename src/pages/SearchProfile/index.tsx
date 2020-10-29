@@ -1,14 +1,14 @@
 import React from 'react';
-import InfoCard from './components/InfoCard';
-import SearchCard from './components/SearchCard';
+import Search from './components/Search';
 
 import './styles.css';
 
-const SearchProfile = () => (
-    <div className="container">
-        <SearchCard text="Encontre um perfil Github"/>
-        <InfoCard />
-    </div>
-);
+const SearchProfile = () => {
+    return (
+        <div className="search-container">
+         <Search />
+      </div>
+    )
+};
 
 export default SearchProfile;

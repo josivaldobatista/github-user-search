@@ -1,5 +1,5 @@
-.container {
-    padding: 0 100px 40px 75px;
-    margin-top: 40px;
-}
-
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 55px 90px 55px 90px;
+ }
