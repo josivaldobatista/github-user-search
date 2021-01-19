@@ -15,8 +15,6 @@ type Props = {
 const SearchResult = ({ html_url, avatar_url, public_repos, followers, following,
   company, blog, location, created_at }: Props) => {
 
-  const date = dayjs(created_at).format("DD/MM/YYYY");
-
   return (
     <div className="search-result-container">
 
@@ -72,7 +70,7 @@ const SearchResult = ({ html_url, avatar_url, public_repos, followers, following
             <span className="content-info-2-field-title">
               Membro desde:
               <span className="content-info-2-field-text">
-                {date}
+                {dayjs(created_at).format("DD/MM/YYYY")}
               </span>
             </span>
           </div>
