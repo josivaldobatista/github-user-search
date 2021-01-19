@@ -1,4 +1,6 @@
 import React from 'react';
+import dayjs from 'dayjs';
+
 import ButtonIcon from 'core/components/ButtonIcon';
 import './styles.css';
 
@@ -12,6 +14,8 @@ type Props = {
 
 const SearchResult = ({ html_url, avatar_url, public_repos, followers, following,
     company, blog, location, created_at }: Props) => {
+
+    const date = dayjs(created_at).format("DD/MM/YYYY");
 
     return (
         <div className="search-result-container">
@@ -66,7 +70,7 @@ const SearchResult = ({ html_url, avatar_url, public_repos, followers, following
                     </div>
                     <div className="content-info-2-field">
                         <span className="content-info-2-field-title">
-                            Membro desde:
+                            Membro desde: {date}
                      <span className="content-info-2-field-text">
                             </span>
                         </span>
